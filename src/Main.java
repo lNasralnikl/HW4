@@ -33,7 +33,7 @@ public class Main {
         System.out.println();
         System.out.println("Задача 3");
         int year = 2001;
-        if ((year > 1583) && (year%4 == 0) && (year%100 != 0)){
+        if ((year > 1583) && (year%4 == 0) && ((year%100 != 0) || (year%400 == 0))){
             System.out.println(year + " год является высокосным");
         }else{
             System.out.println(year + " не является высокосным");
